@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+            
+            <div class="header-tabs">
+                <button class="header-tab active" onclick="showTab(1)">Separador 1</button>
+                <button class="header-tab" onclick="showTab(2)">Separador 2</button>
+                <button class="header-tab" onclick="showTab(3)">Separador 3</button>
+                <button class="header-tab" onclick="showTab(4)">Separador 4</button>
+                <button class="header-tabs" onclick="showTab(5)">Requesitar</button>
+            </div>
+        </div>
+        
+        <div class="dropdown-menu" id="dropdownMenu">
+            <button class="tab" onclick="showTab(1)">Separador 1</button>
+            <button class="tab" onclick="showTab(2)">Separador 2</button>
+            <button class="tab" onclick="showTab(3)">Separador 3</button>
+            <button class="tab" onclick="showTab(4)">Separador 4</button>
+            <button class="menu-item logout" onclick="logout()">Voltar ao Login/Sign in</button>
+        </div>
+
+        <div class="main-layout">
+            <div class="content" id="contentArea">
+                <div class="tab-content active" id="tab1">
+                    <h2>Separador 1 - Início</h2>
+                    <p>Bem-vindo ao primeiro separador! Este é o conteúdo inicial da aplicação. Aqui pode adicionar informações, estatísticas ou qualquer tipo de conteúdo relevante para o utilizador.</p>
+                    <p>Este separador serve como página principal e ponto de partida para navegação.</p>
+                </div>
+
+                <div class="tab-content" id="tab2">
+                    <h2>Separador 2 - Perfil</h2>
+                    <p>Este separador pode conter informações do perfil do utilizador, configurações da conta ou dados pessoais.</p>
+                    <p>Adicione formulários, imagens de perfil ou qualquer informação relacionada ao utilizador aqui.</p>
+                </div>
+
+                <div class="tab-content" id="tab3">
+                    <h2>Separador 3 - Configurações</h2>
+                    <p>Neste separador pode adicionar todas as configurações da aplicação, preferências do utilizador ou opções de personalização.</p>
+                    <p>Inclua switches, checkboxes ou outros elementos de configuração conforme necessário.</p>
+                </div>
+
+                <div class="tab-content" id="tab4">
+                    <h2>Separador 4 - Ajuda</h2>
+                    <p>O último separador é ideal para informações de ajuda, FAQ, suporte ao cliente ou documentação.</p>
+                    <p>Forneça recursos úteis e respostas às perguntas mais frequentes dos utilizadores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
