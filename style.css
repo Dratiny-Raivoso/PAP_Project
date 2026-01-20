@@ -81,8 +81,8 @@ body {
 .app-container {
     background: white;
     width: 90%;
-    max-width: 1200px;
-    min-height: 600px;
+    max-width: 2000px;
+    min-height: 800px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -110,7 +110,7 @@ body {
 .menu-btn {
     padding: 10px 20px;
     background: rgba(255,255,255,0.2);
-    border: 2px solid white;
+    border: 10px solid white;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -120,6 +120,10 @@ body {
 
 .menu-btn:hover {
     background: rgba(255,255,255,0.3);
+}
+
+.header-tabs:last-child {
+    margin-left: auto;
 }
 
 .header-tab {
@@ -133,7 +137,6 @@ body {
     transition: all 0.3s;
     font-size: 14px;
 }
-
 
 .header-tab:hover {
     background: rgba(255,255,255,0.3);
@@ -149,7 +152,7 @@ body {
     top: 70px;
     left: 20px;
     background: white;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     display: none;
     z-index: 1000;
