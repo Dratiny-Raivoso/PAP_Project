@@ -13,13 +13,25 @@
                 <label for="username">Utilizador</label>
                 <input type="text" id="username" placeholder="Digite o utilizador">
             </div>
+
+            <!-- Campo de email que aparece ao clicar em Criar Conta -->
+            <div class="form-group escondido" id="emailField">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite o seu email">
+            </div>
+
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Digite a password">
             </div>
+            
             <button type="submit" class="login-btn">Entrar</button>
-            <button type="submit" class="login-btn">Criar Conta</button>
-            <button type="button" class="login-btn" onclick="skipLogin()" style="background: #95a5a6; margin-top: 10px;">Continuar sem Login</button>
+            <button type="button" id="meuBotao" class="login-btn">Criar Conta</button>
+            
+            <div id="elementoParaEsconder">
+                <button type="button" class="login-btn" onclick="skipLogin()" style="background: #95a5a6; margin-top: 10px;">Continuar sem Login</button>
+            </div>
+            
             <div class="error" id="errorMsg"></div>
         </form>
     </div>
