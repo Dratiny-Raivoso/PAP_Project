@@ -1,8 +1,5 @@
-// JavaScript para o Login
-const users = {
-    'admin': 'admin123',
-    'utilizador': 'pass123'
-};
+// DB
+require("./db");
 
 // Se estiver na página de login
 if (document.getElementById('loginForm')) {
